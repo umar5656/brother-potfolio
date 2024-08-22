@@ -3,7 +3,9 @@
       padding: 20px 4%;
   }
 }
-
+.main-header{
+  padding: 0 12rem !important;
+}
 a {
   text-decoration: none;
 }
@@ -234,6 +236,9 @@ nav .nav-links {
   html {
     font-size: 50%;
   }
+  .main-header{
+    padding: 0 5rem !important;
+  }
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -257,7 +262,7 @@ nav .nav-links {
   }
     .welcome-section{
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
       margin-top: 8.6rem ;
     }

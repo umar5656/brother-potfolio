@@ -174,8 +174,10 @@ img {
   /* background-color: #303841; */
   margin-bottom: 1.6rem;
   margin-top: 0;
-  padding:0 23rem !important ;
   z-index: 10;
+}
+#main-header-1{
+  padding:0 23rem ;
 }
 .nav-list {
   display: flex;

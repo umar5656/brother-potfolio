@@ -57,13 +57,13 @@ nav .nav-links {
 .batn::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 8px;
   right: 4px;
   display: block;
   border-radius: 50px;
   background: #fff;
   width: 40px;
-  height: 81%;
+  height: 70%;
   transition: all 0.3s ease;
 
 }
@@ -77,7 +77,7 @@ nav .nav-links {
 
 .batn svg {
   position: absolute;
-  top: 18px;
+  top: 22px;
   right: 14px;
   font-size: 16px;
   fill: none;

@@ -222,5 +222,92 @@
       <p>Created for professional networking and collaboration.</p>
     </footer>
     <!-- END FOOTER SECTION -->
+     <script>
+      document.querySelectorAll('project-image').forEach(image => {
+    image.addEventListener('mouseover', () => {
+      image.style.transform = 'scale(1.05) translateY(-5px)';
+      image.style.transition = 'transform 0.3s ease';
+    });
+  
+    image.addEventListener('mouseout', () => {
+      image.style.transform = 'scale(1)';
+    });
+  });
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  const heading = document.querySelector('.welcome-text-box h1');
+
+  setTimeout(() => {
+    heading.style.opacity = '1';
+    heading.style.transform = 'translateY(0)';
+  }, 500); // 500ms delay
+  
+  // Initial state (in CSS)
+  heading.style.opacity = '0';
+  heading.style.transform = 'translateY(20px)';
+  heading.style.transition = 'all 1s ease';
+  const heading = document.querySelector('.welcome-text-box h1');
+
+  setTimeout(() => {
+    heading.style.opacity = '1';
+    heading.style.transform = 'translateY(0)';
+  }, 500); // 500ms delay
+  
+  // Initial state (in CSS)
+  heading.style.opacity = '0';
+  heading.style.transform = 'translateY(20px)';
+  heading.style.transition = 'all 1s ease';
+  const fadeInSections = document.querySelectorAll('.projects-section, .contact-section, footer');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+  
+  fadeInSections.forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(20px)';
+    section.style.transition = 'all 1s ease';
+    observer.observe(section);
+  });
+  const checkbox = document.getElementById('check');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
+  });
+  window.addEventListener('scroll', () => {
+    const offset = window.scrollY;
+    document.querySelector('.welcome-section').style.backgroundPositionY = `${offset * 0.5}px`;
+  });
+  window.addEventListener('load', () => {
+    const welcomeText = document.querySelector('.welcome-text-box');
+    welcomeText.style.opacity = '1';
+    welcomeText.style.transform = 'translateY(0)';
+  });
+  
+
+     </script>
   </body>
 </html>

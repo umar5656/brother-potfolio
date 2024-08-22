@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects - John Doe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Your existing styles remain the same */
+      :root {
+        --main-white: #f0f0f0;
+        --main-red: #be3144;
+        --main-blue: #45567d;
+        --main-gray: #303841;
+      }
+
+      /* Base reset and typography settings (same as previous) */
+      /* Include your existing base styles here */
+
+      /* Specific styles for this page */
+      .all-projects-header {
+        text-align: center;
+        padding: 5rem 2rem;
+        /* background: var(--main-blue); */
+        background: var(--main-gray);
+        color: var(--main-white);
+      }
+
+      .all-projects-header h1 {
+        font-size: 5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 4rem;
+        width: 100%;
+        max-width: 1280px;
+        margin: 5rem auto;
+        padding: 0 2rem;
+      }
+      .code {
+        color: var(--main-gray);
+        transition: color 0.3s ease-out;
+      }
+
+      .project-title .code {
+        color: #ff7f50;
+      }
+
+      .project {
+        background: var(--main-gray);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        text-decoration:none;
+        color: #f0f0f0;
+        border-radius: 2px;
+        transition: transform 0.3s ease;
+      }
+
+      .project:hover {
+        transform: scale(1.05);
+      }
+
+      .project-title {
+        font-size: 2rem;
+        /* padding: 0rem 0.5rem; */
+        text-align: center;
+      }
+
+      .project-image {
+        width: 100%;
+        height: 22rem;
+        object-fit: cover;
+      }
+
+      .btn-back {
+        display: block;
+        text-align: center;
+        padding: 1rem 3rem;
+        margin: 3rem auto;
+        background: var(--main-red);
+        color: var(--main-white);
+        font-size: 2rem;
+        border-radius: 5px;
+        border: none;
+        transition: background 0.3s ease;
+      }
+      .go-back-btn {
+        font-size: 2rem;
+        background: var(--main-gray);
+        transition: background 0.1s ease-out;
+      }
+
+      .go-back-btn:hover {
+        background: var(--main-red);
+      }
+      .back-btn-ancher {
+        text-decoration: none;
+        color: #f0f0f0;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="all-projects-header">
+      <h1>All Servises</h1>
+      <p>Explore all my work and achievements</p>
+    </header>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+      <a href="https://example.com/project1" target="_blank" class="project">
+        <img
+          class="project-image"
+          src="yahya-img/c1.jpg"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          hard working is our priority
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://example.com/project1" target="_blank" class="project">
+        <img
+          class="project-image"
+          src="yahya-img/c2.jpg"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Company Profit
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://example.com/project1" target="_blank" class="project">
+        <img
+          class="project-image"
+          src="yahya-img/c3.jpg"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Financial updates
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://example.com/project1" target="_blank" class="project">
+        <img
+          class="project-image"
+          src="yahya-img/c4.jpg"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Best Managment
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://example.com/project1" target="_blank" class="project">
+        <img
+          class="project-image"
+          src="yahya-img/c5.jpg"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+      
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+
+      <!-- Add more projects similarly -->
+      <a href="https://example.com/project2" target="_blank" class="project">
+        <img
+          class="project-image"
+          src="https://via.placeholder.com/320x180"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+           Development
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <!-- Add as many projects as needed -->
+    </section>
+
+    <!-- Back Button -->
+    <button class="go-back-btn btn-back">
+      <a href="index.html" class="back-btn-ancher"
+        ><i class="fas fa-arrow-left"></i> Back to Home</a
+      >
+    </button>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Yahya fazal - General Manager. All rights reserved.</p>
+      <p>Created for professional networking and collaboration.</p>
+    </footer>
+  </body>
+</html>

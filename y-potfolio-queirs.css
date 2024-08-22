@@ -1,0 +1,290 @@
+@media (max-width: 1480px) {
+  section {
+      padding: 20px 4%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.black{
+  color: #1d1d1f;
+}
+
+/* Navbar Design */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 15px 1rem;
+  margin-top: 7px;
+}
+
+.nav-links .nav-text {
+  font-size: 15px;
+  color: #1d1d1d;
+  transition: all 350ms ease;
+}
+.batn {
+  position: relative;
+  margin: auto;
+  padding: 15px 1rem;
+  transition: all 0.2s ease;
+  background-color: var(--main-color);
+  border-radius: 50px;
+  color: #fff;
+}
+
+.batn::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  display: block;
+  border-radius: 50px;
+  background: #fff;
+  width: 40px;
+  height: 81%;
+  transition: all 0.3s ease;
+
+}
+
+.batn-text {
+  position: relative;
+  padding: 10px 36px 10px 10px;
+  vertical-align: middle;
+  transition: .1s ease;
+}
+
+.batn svg {
+  position: absolute;
+  top: 18px;
+  right: 14px;
+  font-size: 16px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transition: all 0.3s ease;
+}
+
+.batn:hover::before {
+  width: 95%;
+  background: #fff;
+}
+
+.batn:hover {
+  color: #000;
+}
+
+.batn:active {
+  transform: scale(0.96);
+}
+
+
+#check {
+  display: none;
+}
+
+.nav-icon {
+  display: none;
+  font-size: 1.5rem;
+  border: 1px solid hsla(0, 0%, 53.3%, 0.15);
+  padding: 17px;
+  transition: .3s ease;
+}
+
+@media (max-width: 1480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+@media (max-width: 980px) {
+  #check:checked~.nav-icon #menu-icon {
+      display: none;
+  }
+  #check:checked~.nav-icon #close-icon {
+      display: block;
+  }
+
+  #check:checked~.nav-icon {
+      /* background: var(--main-color); */
+      color: #fff;
+  }
+
+  .nav-icon {
+      display: inline-flex;
+  }
+
+  #close-icon {
+      display: none;
+  }
+.nav-list{
+  display: flex;
+  flex-direction: column;
+}
+  nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 0;
+      position: absolute;
+      top: 86px;
+      left: 0;
+      padding: 0;
+      overflow: hidden;
+      transition: .3s ease;
+      background: #38d9a9;
+  }
+
+  #check:checked~nav {
+      height: 22.5rem;
+      padding: 16px 50% 20px 15px;
+      border-radius: 2.6rem;
+  }
+
+  
+  .nav-links .nav-text {
+      display: none;
+      margin-left: 0;
+  }
+  
+  #check:checked~nav .nav-links .nav-text{
+      display: block;
+  }
+
+  .nav-btn {
+      margin: 0 0 0 8px;
+  }
+
+  .nav-btn-text {
+      margin: 0 auto;
+  }
+  .welcome-img-box::before{
+    width: 135%;
+    padding-bottom: 135%;
+  }
+}
+
+@media (max-width: 460px) {
+  #check:checked~nav {
+      padding: 1rem 35% 1.25rem 1px;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+  .welcome-text-box{
+    margin-bottom: 8.6rem;
+  }
+  .welcome-section{
+    
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+  .welcome-img {
+    width: 60vw;
+    margin-bottom: 4.6rem;
+  }
+  .welcome-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+    margin-top: 7.6rem;
+  }
+  .welcome-img-box::before{
+    width: 150%;
+    padding-bottom:150% ;
+  }
+}
+@media(max-width:40.5em) {
+  .welcome-img-box::before{
+    width: 140%;
+    padding-bottom:140%;
+  }
+  
+}
+@media (max-width: 28.75em) {
+  html {
+    font-size: 50%;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+  .projects-section-header {
+    font-size: 4rem;
+  }
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+    .welcome-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 8.6rem ;
+    }
+    .welcome-para{
+      width: 32rem;
+    }
+    .welcome-text-box a{
+      width: 19.2rem;
+    }
+    .welcome-btan-box{
+      margin-left: -0.4rem;
+    }
+    .welcome-img-box::before{
+      width: 130%;
+      padding-bottom:130% ;
+    }
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+  body{
+    background-color: black;
+  }
+ .projects-grid{
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}

@@ -156,7 +156,8 @@ nav .nav-links {
       padding: 0;
       overflow: hidden;
       transition: .3s ease;
-      background: #38d9a9;
+      background: #272727;
+      opacity: 75%;
   }
 
   #check:checked~nav {
@@ -200,9 +201,6 @@ nav .nav-links {
   .welcome-text-box{
     margin-bottom: 8.6rem;
   }
-  .welcome-section{
-    
-  }
 }
 
 @media (max-width: 61.25em) {
@@ -238,10 +236,6 @@ nav .nav-links {
   }
   .main-header{
     padding: 0 5rem !important;
-  }
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
   footer {
     flex-direction: column;
@@ -287,9 +281,5 @@ nav .nav-links {
   }
   body{
     background-color: black;
-  }
- .projects-grid{
-  display: grid;
-    grid-template-columns: repeat(2,1fr);
   }
 }
